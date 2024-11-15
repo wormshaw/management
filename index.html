@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paramètres de la forme</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Paramètres de la forme</h1>
+
+        <form id="form-settings">
+            <h2>Paramètres de la forme</h2>
+            <label for="polyhedron">Polyhedron</label>
+            <select id="polyhedron" name="polyhedron">
+                <option value="Icosahedron">Icosahedron</option>
+                <option value="Dodecahedron">Dodecahedron</option>
+                <option value="Tetrahedron">Tetrahedron</option>
+            </select>
+
+            <label for="freq-v">Fréquence, V</label>
+            <select id="freq-v" name="freq-v">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3" selected>3</option>
+                <option value="4">4</option>
+            </select>
+
+            <label for="subdivision-class">Classe de subdivision</label>
+            <select id="subdivision-class" name="subdivision-class">
+                <option value="I" selected>I</option>
+                <option value="II">II</option>
+                <option value="III">III</option>
+            </select>
+
+            <label for="subdivision-method">Méthode de subdivision</label>
+            <select id="subdivision-method" name="subdivision-method">
+                <option value="Cordes égales" selected>Cordes égales</option>
+                <option value="Autre méthode">Autre méthode</option>
+            </select>
+
+            <label for="symmetry-axis">Axe de symétrie</label>
+            <select id="symmetry-axis" name="symmetry-axis">
+                <option value="Pentad" selected>Pentad</option>
+                <option value="Tetrad">Tetrad</option>
+                <option value="Hexad">Hexad</option>
+            </select>
+
+            <label for="fullerene">Fullerène</label>
+            <select id="fullerene" name="fullerene">
+                <option value="Aucune" selected>Aucune</option>
+                <option value="Option 1">Option 1</option>
+                <option value="Option 2">Option 2</option>
+            </select>
+
+            <label for="sphere-cut">Découpage de la sphère</label>
+            <select id="sphere-cut" name="sphere-cut">
+                <option value="7/12" selected>7/12</option>
+                <option value="5/12">5/12</option>
+                <option value="3/12">3/12</option>
+            </select>
+
+            <div class="checkbox-group">
+                <input type="checkbox" id="align-bottom" name="align-bottom">
+                <label for="align-bottom">Aligner le bas</label>
+            </div>
+
+            <h2>Caractéristiques du matériel</h2>
+
+            <label for="sphere-radius">Rayon de la sphère, m</label>
+            <input type="number" id="sphere-radius" name="sphere-radius" value="10">
+
+            <h2>Taille des montants</h2>
+
+            <label for="width">Largeur, mm</label>
+            <input type="number" id="width" name="width" value="120">
+
+            <label for="thickness">Épaisseur, mm</label>
+            <input type="number" id="thickness" name="thickness" value="40">
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
